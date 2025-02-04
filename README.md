@@ -1,0 +1,3 @@
+# Assembly Addressing Mode Bug
+
+This repository demonstrates a potential buffer overflow vulnerability in assembly code due to unsafe addressing.  The `bug.asm` file contains the problematic code.  The `bugSolution.asm` file offers a safer, more robust solution.  The bug involves using the `ecx` register as a multiplier without proper bounds checking, leading to potential out-of-bounds memory access if `ecx` contains a large value.
